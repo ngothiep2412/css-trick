@@ -1,0 +1,30 @@
+.body {
+  background-color: #ccc;
+}
+.profile {
+  display: grid;
+  gap: 1rem;
+  max-width: 55ch;
+  padding: var(--size-400);
+  grid-auto-columns: 1fr;
+  grid-template-areas: "image name" "image description";
+  margin: auto;
+}
+
+.grid-center {
+  place-content: center;
+}
+.profile__image {
+  border-radius: 56% 44% 73% 27% / 45% 68% 32% 55%;
+  grid-area: image;
+}
+
+.profile__name {
+  grid-area: name;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.profile__description {
+  grid-area: description;
+}
